@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wedding Invitation</title>
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    text-align:center;
+    color:#2c3e50;
+}
+
+/* HERO SECTION WITH BG IMAGE */
+.hero {
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background: 
+        linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url("/images/img9.jpg") center/cover no-repeat;
+    color:rgb(255, 73, 91);
+    padding:20px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size:48px;
+    margin:10px;
+}
+
+.hero p {
+    color:rgb(249, 249, 249);
+    font-size:20px;
+}
+
+/* CARD SECTIONS */
+.section {
+    margin:20px auto;
+    padding:25px;
+    width:90%;
+    max-width:600px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color:#1a8cd7;
+}
+
+/* GALLERY */
+.gallery {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.gallery img {
+    width:45%;
+    max-width:180px;
+    height:180px;
+    object-fit:cover;
+    margin:8px;
+    border-radius:12px;
+}
+
+/* BUTTON */
+a {
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#1a8cd7;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+
+.invitation {
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+}
+
+.invitation h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    color: #ff495b;
+}
+
+.invite-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* MOBILE FIX */
+@media (max-width:600px) {
+    h1 {
+        font-size:36px;
+    }
+
+    .hero p {
+        font-size:16px;
+    }
+
+    .gallery img {
+        width:90%;
+        height:auto;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- MUSIC (user click required for mobile) -->
+<audio id="bgMusic" loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3">
+</audio>
+
+<script>
+document.addEventListener("click", function() {
+    document.getElementById("bgMusic").play();
+}, { once: true });
+</script>
+
+<!-- HERO -->
+<div class="hero">
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <h1>Amal Vishnu ❤️ Heera Harilal</h1>
+    <p> Friday, May 8 - 2026</p>
+    
+</div>
+
+<div class="section invitation">
+    <h2>All Are Welcome</h2>
+    <p class="invite-text">
+        With hearts full of love and joy, we warmly invite you to be a part of our special day.
+        <br><br>
+        Your presence will make our celebration even more meaningful as we begin this beautiful journey together.
+        <br><br>
+        Join us as we celebrate love, laughter, and togetherness.
+    </p>
+</div>
+
+<!-- THALIKETTU -->
+<div class="section">
+    <img src="/images/bg2.jpg" style="width:80px; margin-bottom:10px;">
+    <h2>Thalikettu</h2>
+    <p>
+    @ Sree Krishna Temple, Guruvayoor<br>
+    Time: 7:58 AM – 8:30 AM
+    </p>
+</div>
+
+<!-- RECEPTION -->
+<div class="section">
+    <img src="/images/bg5.png" style="width:80px; margin-bottom:10px;">
+    <h2>Reception</h2>
+    <p>
+    Yamuna Castle, Perinjanam<br>
+    Time: 5:30pm - 8:30pm <br>
+    <a href="https://maps.app.goo.gl/f54Zmn4RQtNmVgVGA">View Location</a>
+    </p>
+</div>
+
+<!-- GALLERY -->
+<div class="section">
+    <h2>Our Moments</h2>
+    <div class="gallery">
+        <img src="/images/img1.jpg">
+        <img src="/images/img2.jpg">
+        <img src="/images/img3.jpg">
+        <img src="/images/img5.jpg">
+        <img src="/images/img6.jpg">
+        <img src="/images/img8.jpg">
+    </div>
+</div>
+
+</body>
+</html>
